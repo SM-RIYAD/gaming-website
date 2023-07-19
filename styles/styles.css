@@ -1,8 +1,9 @@
 /* shared styles */
-.body {
+body {
     margin: 0;
 
     font-family: 'Roboto', sans-serif;
+font-family: 'Work Sans', sans-serif;
 }
 
 .pink-text {
@@ -15,7 +16,7 @@
 .nav-head h2 {
 
     text-align: center;
-    font-family: Work Sans;
+  
     font-size: 45px;
     font-style: normal;
     font-weight: 700;
@@ -62,7 +63,7 @@ nav li {
     list-style: none;
     color: #3C354F;
     text-align: center;
-    font-family: Work Sans;
+
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -105,17 +106,13 @@ nav li {
     background-image: url("../images/Group\ 14.png");
     background-size: contain;
         background-repeat:round;
-    
-  
-
-    
 }
 
 .banner-title {
 
     color: #0B0223;
   
-    font-family: Work Sans;
+ 
     font-size: 30px;
 
     font-weight: 600;
@@ -171,7 +168,7 @@ border:0;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   
-    font-family: Work Sans;
+
     font-size: 75px;
     font-style: normal;
     font-weight: 1000;
@@ -191,7 +188,51 @@ border:0;
   
 }
 
+/* online-game-section */
 
+.online-games h1,p{
+
+    text-align: center;
+}
+.online-games{
+margin: 0 200px;
+  
+}
+.online-game-container img{
+
+    width: 100%;
+}
+.online-game-container{
+
+    display:flex;
+    justify-content:space-between;
+    gap: 10px;
+}
+.online-games h1{
+
+    color: #0B0223;
+text-align: center;
+font-family: Work Sans;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top:100px;
+margin-bottom: 20px;
+}
+.online-games .special-effect{
+    font-size: 48px;
+    
+ 
+
+}
+.text-secondary{
+color:gray
+}
+.game-card{
+
+width:250px;
+}
 
 /* responsive-styles */
 /* mobile devices */
@@ -242,7 +283,32 @@ display: flex;
 justify-content: start;
 gap:10px
 }
+
+.online-games{
+    margin: 0 10px;
+ 
+      
+    }
+    .online-game-container{
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+    }
+    .online-game-container img{
+
+    }
+    .online-games h1{
+
+        font-size: 25px;
+        
+    }
+    .online-games .special-effect{
+        font-size: 30px;
+    }
 }
+
 
 @media screen and (min-width:576px) and (max-width:960px) {
 
@@ -277,5 +343,25 @@ gap:10px
     justify-content: start;
     gap:10px
     }
-
+    .online-games{
+      
+     margin: 0 10px;
+          
+        }
+        .online-game-container{
+    
+       
+     
+        }
+        .online-game-container img{
+    
+        }
+        .online-games h1{
+    
+     
+            
+        }
+        .online-games .special-effect{
+          
+        }
 }
